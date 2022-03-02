@@ -162,6 +162,7 @@ PRODUCT_PACKAGES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.zram \
     init.class_main.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
@@ -517,3 +518,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# ZRAM writeback
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.zram.mark_idle_delay_mins=60 \
+    ro.zram.first_wb_delay_mins=1440 \
+    ro.zram.periodic_wb_delay_hours=24
