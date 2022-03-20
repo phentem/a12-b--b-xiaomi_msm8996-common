@@ -45,7 +45,7 @@
             </intent-filter>
         </provider>
 
-        <activity
+        <activity>
             android:name=".ButtonSettingsActivity"
             android:label="@string/device_settings_app_name"
             android:exported="true">
