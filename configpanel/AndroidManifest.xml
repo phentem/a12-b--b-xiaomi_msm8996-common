@@ -59,11 +59,11 @@
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.homepage" />
             <meta-data
-                android:name="com.android.settings.summary">
+                android:name="com.android.settings.summary" />
             </activity>
 
         <activity android:name=".KeyHandler"
-            android:exported="false">
+            android:exported="true">
         </activity>
 
         <receiver android:name=".BootCompletedReceiver"
