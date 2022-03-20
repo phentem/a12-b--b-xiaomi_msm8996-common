@@ -45,7 +45,7 @@
             </intent-filter>
         </provider>
 
-        <activity>
+        <activity
             android:name=".ButtonSettingsActivity"
             android:label="@string/device_settings_app_name"
             android:exported="true">
@@ -60,7 +60,7 @@
                 android:value="com.android.settings.category.ia.homepage" />
             <meta-data
                 android:name="com.android.settings.summary"
-        </activity>
+</activity>
 
         <activity android:name=".KeyHandler"
             android:exported="false">
